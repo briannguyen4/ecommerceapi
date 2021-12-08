@@ -21,6 +21,7 @@ mongoose.connect(
 // })
 
 // app.get("/api/test", () => console.log("Test is sucessful"));
+app.use(express.json());
 
-app.use('/api/user', userRoute);
+app.use('/api/users', userRoute);
 
